@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addMedicineTitle"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rreturn"
+        android:id="@+id/addMedicineReturn" />
+    <TextView
+        android:id="@+id/txt_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text= "添加用药事项 "
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/addMedicineCommit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="√保存"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_alignBaseline="@+id/txt_top"
+        android:layout_alignBottom="@+id/txt_top"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

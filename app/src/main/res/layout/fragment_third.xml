@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context="com.phemie.scnu.laolekang.FirstFragment">
+
+    <!--顶部大的信息栏-->
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/transparent">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text= "老乐康 " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/text_gray"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/medicine"
+        android:layout_width="282dp"
+        android:layout_height="68dp"
+        app:srcCompat="@drawable/medicine"
+        tools:layout_editor_absoluteY="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        android:layout_above="@+id/add"
+        android:layout_alignEnd="@+id/foot"
+        android:layout_alignStart="@+id/add" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="83dp"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/add"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:layout_alignBottom="@+id/recent"
+        android:layout_toStartOf="@+id/recent" />
+
+    <ImageButton
+        android:id="@+id/recent"
+        android:layout_width="92dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/recent"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:layout_alignTop="@+id/history"
+        android:layout_toStartOf="@+id/history" />
+
+    <ImageButton
+        android:id="@+id/history"
+        android:layout_width="105dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/history"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:layout_above="@+id/health"
+        android:layout_alignEnd="@+id/heartbeat"
+        android:layout_marginBottom="19dp" />
+
+    <ImageButton
+        android:id="@+id/health"
+        android:layout_width="196dp"
+        android:layout_height="88dp"
+        app:srcCompat="@drawable/health"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:layout_alignBottom="@+id/foot"
+        android:layout_alignStart="@+id/add" />
+
+    <ImageButton
+        android:id="@+id/heartbeat"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/heartbeat"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="205dp"
+        android:layout_above="@+id/foot"
+        android:layout_alignStart="@+id/foot" />
+
+    <ImageButton
+        android:id="@+id/foot"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/foot"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_marginBottom="66dp"
+        android:layout_above="@+id/call"
+        android:layout_alignEnd="@+id/call" />
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="278dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/call"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="335dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
+
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <!--第一个-->
+        <TextView
+            android:id="@+id/txt_pperson"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/tab_menu_pperson"
+            android:gravity="center"
+            android:textColor="@drawable/tab_menu_pperson_text"
+            android:text="个人中心"/>
+
+        <!--第二个-->
+        <TextView
+            android:id="@+id/txt_mmedicine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/tab_menu_mmedicine"
+            android:gravity="center"
+            android:textColor="@drawable/tab_menu_mmedicine_text"
+            android:text="用药提醒"/>
+
+        <!--第三个-->
+        <TextView
+            android:id="@+id/txt_hhome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/tab_menu_hhome"
+            android:gravity="center"
+            android:textColor="@drawable/tab_menu_hhome_text"
+            android:text="主页"/>
+
+        <!--第四个-->
+        <TextView
+            android:id="@+id/txt_hhealth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/tab_menu_hhealth"
+            android:gravity="center"
+            android:textColor="@drawable/tab_menu_hhealth_text"
+            android:text="健康数据"/>
+
+        <!--第五个-->
+        <TextView
+            android:id="@+id/txt_ccall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/tab_menu_ccall"
+            android:gravity="center"
+            android:textColor="@drawable/tab_menu_ccall_text"
+            android:text="紧急呼叫"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent"
+        android:layout_above="@id/tab_menu"/>
+
+    <ImageButton
+        android:id="@+id/ssetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/setting" />
+
+</RelativeLayout>
