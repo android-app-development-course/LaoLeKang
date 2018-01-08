@@ -1,0 +1,6 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="Android/Insert App Indexing API Code" />
+    <ignoreAction name="Android/Override Resource in Other Configuration..." />
+  </component>
+</application>
